@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Accessories Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    
+    
+    <div class="content">
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html"><h1 class="logo">Nazzy's Charm</h1></a>
+            <nav class="nav">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <!-- Left Image Carousel -->
+            <div id="leftCarousel" class="carousel slide carousel-left" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image2.png" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image.png" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image1.png" class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Video Carousel -->
+            <div id="centerCarousel" class="carousel slide carousel-center" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video class="d-block w-100" autoplay muted loop>
+                            <source src="hairvid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" autoplay muted loop>
+                            <source src="hairvids.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" autoplay muted loop>
+                            <source src="hairclip.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image Carousel -->
+            <div id="rightCarousel" class="carousel slide carousel-right" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image1.png" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image2.png" class="d-block w-100" alt="Image 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image.png" class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section Slider -->
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <section class="hero">
+                        <h2>Stylish Hair Accessories</h2>
+                        <p>Explore the best hair accessories in beautiful shades of pink and purple!</p>
+                        <a href="home.html"><button onclick="scrollToProducts()" class="shop-button">Shop Now</button></a>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section class="hero">
+                        <h2>Elegant Clips Collection</h2>
+                        <p>Discover our range of elegant and stylish hair clips to add charm to your look!</p>
+                        <a href="home.html"><button onclick="scrollToProducts()" class="shop-button">Explore Collection</button></a>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section class="hero">
+                        <h2>Exclusive Scrunchies</h2>
+                        <p>Stay stylish and comfortable with our range of premium scrunchies.</p>
+                        <a href="home.html"><button onclick="scrollToProducts()" class="shop-button">View Scrunchies</button></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+    <section class="products" id="products">
+        <h2 class="logo">New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="/pics/Elegant Hair Clip.jpg" alt="Hair Clip 1">
+                <h3>Elegant Hair Clip</h3>
+                <p>$10.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (1).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (2).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="pics/images (3).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/pics/Elegant Hair Clip.jpg" alt="Hair Clip 1">
+                <h3>Elegant Hair Clip</h3>
+                <p>$10.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (1).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (2).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="pics/images (3).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/pics/Elegant Hair Clip.jpg" alt="Hair Clip 1">
+                <h3>Elegant Hair Clip</h3>
+                <p>$10.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (1).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (2).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="pics/images (3).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/pics/Elegant Hair Clip.jpg" alt="Hair Clip 1">
+                <h3>Elegant Hair Clip</h3>
+                <p>$10.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (1).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="pics/images (2).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="pics/images (3).jpg" alt="Scrunchie 1">
+                <h3>Silk Scrunchie</h3>
+                <p>$8.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>            <!-- Add more products here -->
+        </div>
+    </section>
+
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <section class="hero">
+                    <h2>Stylish Hair Accessories</h2>
+                    <p>Need more stylish products for your hair, Check out our main page and pick your choice of hair accessories. We've got yuo covered.</p>
+                    <a href="home.html"><button onclick="scrollToProducts()" class="shop-button">Shop Now</button></a>
+                </section>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <section class="hero">
+                    <h2>Elegant Clips Collection</h2>
+                    <p>Like what you see? Check out the main page and get more choices to pick from.</p>
+                    <a href="home.html"><button onclick="scrollToProducts()" class="shop-button">Explore Collection</button></a>
+                </section>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <section class="hero">
+                    <h2>Exclusive Scrunchies</h2>
+                    <p>Stay stylish and comfortable with our range of premium scrunchies.</p>
+                    <a href="home.html"><button onclick="scrollToProducts()" class="shop-button">View Scrunchies</button></a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo">Nazzy's Charm</h2>
+                    <p>Your one-stop shop for beautiful hair accessories</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@hairglamour.com</p>
+                    <p>Chat with us via  <a href="https://wa.me/+2349125223477"><i class="fab fa-whatsapp"></i></a></p>
+                    <p>Call us on +2348119833748</p>
+                    <p>Follow us:</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>Subscribe</h3>
+                    <p>Get the latest updates on new arrivals and offers</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2024 Hair Glamour. All rights reserved.</p>
+        </footer>
+    </div>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
